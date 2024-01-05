@@ -5,11 +5,6 @@ const cors = require("cors")
 
 //Protect routes
 exports.protect = async (req, res, next) => {
-	cors({
-		origin: 'https://cinemalk.vercel.app',
-		credentials: true
-	  })(req, res, () => {});
-
 	let token
 	if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
 		token = req.headers.authorization.split(' ')[1]
