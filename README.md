@@ -1,0 +1,1 @@
+https://cinemalk.vercel.app/
